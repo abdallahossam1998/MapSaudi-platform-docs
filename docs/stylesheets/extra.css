@@ -14,7 +14,7 @@ h6 {
   color: rgb(0, 77, 92) !important;
 }
 
-li{
+li::marker{
   color: rgb(0, 77, 92) !important;
 }
 
