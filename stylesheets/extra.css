@@ -1,0 +1,27 @@
+:root > * {
+  --md-primary-fg-color: rgb(0, 77, 92);
+  --md-primary-fg-color--light: rgb(0, 139, 167);
+  --md-primary-fg-color--dark: rgb(0, 77, 92);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold !important;
+  color: rgb(0, 77, 92) !important;
+}
+
+li::marker{
+  color: rgb(0, 77, 92) !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.md-header {
+  display: none;
+}
