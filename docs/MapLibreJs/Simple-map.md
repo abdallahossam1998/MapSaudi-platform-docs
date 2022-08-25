@@ -1,0 +1,42 @@
+# Simple map integration
+
+Estimated reading time : 1 minutes
+
+Check out this code sample that uses the MapLibre GL JS library to integrate a simple map onto your site.
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=UTF-8>
+  <link href='https://unpkg.com/maplibre-gl@2.1.9/dist/maplibre-gl.css' rel='stylesheet' />
+  <script src='https://unpkg.com/maplibre-gl@2.1.9/dist/maplibre-gl.js'></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    #map {
+      min-height: 500px;
+      height: 100%;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+  <script>
+    // Don't forget to replace <YOUR_ACCESS_TOKEN> by your real access token! 
+    const accessToken = '<YOUR_ACCESS_TOKEN>';
+    const map = new maplibregl.Map({
+      container: 'map',
+      style: `https://api.jawg.io/styles/jawg-sunny.json?access-token=${accessToken}`,
+      zoom: 2,
+      center: [2.3210938, 48.7965913]
+    }).addControl(new maplibregl.NavigationControl(), 'top-right');
+    // This plugin is used for right to left languages
+    maplibregl.setRTLTextPlugin('https://unpkg.com/@mapbox/mapbox-gl-rtl-text@0.2.3/mapbox-gl-rtl-text.min.js');
+  </script>
+</body>
+</html>
+```

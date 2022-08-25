@@ -1,0 +1,130 @@
+# Project information
+site_name: MapSaudi
+site_description: 'MapSaudi Documentation'
+site_author: 'CatoLogic'
+site_url: 'https://www.mapsaudi.com'
+
+# Configuration
+theme:
+  name: material
+  palette:
+    primary: teal
+  font:
+    text: Cairo
+  logo: images/logo.png
+  favicon: images/favicon.ico
+  features:
+    - navigation.instant
+    - navigation.indexes
+    # - navigation.expand
+    - toc.follow
+    - toc.integrate
+    - navigation.top
+    - search.highlight
+    - search.share
+    - content.tabs.link
+
+# Copyright
+copyright: Copyright &copy; 2022 All Rights Reserved by <a href="https://www.cartologic.com/">Cartologic</a>
+
+# Plugins
+plugins:
+  - search:
+      lang: 
+        - en
+        - ar
+
+# extras
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+extra:
+  homepage: https://www.mapsaudi.com
+  generator: false
+  # alternate:
+  #   - name: English
+  #     link: /en/ 
+  #     lang: en
+  #   - name: عربي
+  #     link: /ar/
+  #     lang: ar
+
+# Customization
+  social:
+    - icon: fontawesome/brands/twitter 
+      link: https://twitter.com/MapSaudi2
+    - icon: fontawesome/brands/linkedin 
+      link: https://www.linkedin.com/company/cartologic/
+    - icon: fontawesome/brands/youtube 
+      link: https://www.youtube.com/channel/UCaE-uxzoDeSzxdDtuaaD4hA
+
+# Pages
+nav:
+- Home: index.md
+- API doc & reference:
+    - Overview: Overview-api.md
+    - Base Maps:
+        - Overview: basemaps/BaseMaps.md
+        - Dynamic Maps: basemaps/DynamicMaps.md
+    # - Map Services: MapServices.md
+- SDKs & Softwares:
+    - Overview: Overview-sdk.md
+    - ArcMap: ArcMap.md
+    - QGIS: QGIS.md
+    - Leaflet (raster map): 
+      - Quickstart: Leaflet/Quickstart.md
+      - Simple map: Leaflet/Simple-map.md
+      - Add a marker: Leaflet/Add-a-marker.md
+      - Add geometry: Leaflet/Add-Geometry.md
+      - Display a popup: Leaflet/Display-a-popup.md
+      - Change language: Leaflet/Change-language.md
+      - Change style: Leaflet/Change-style.md
+      - Use a custom style: Leaflet/Use-a-custom-style.md
+      - Use maplibre-gl-leaflet: Leaflet/Use-maplibre-gl-leaflet.md
+    - MapLibre GL JS (vector map): 
+      - Quickstart: MapLibreJs/Quickstart.md
+      - Simple map: MapLibreJs/Simple-map.md
+      - Add a marker: MapLibreJs/Add-a-marker.md
+      - Add geometry: MapLibreJs/Add-Geometry.md
+      - Add your data: MapLibreJs/Add-Geometry.md
+      - Display a popup: MapLibreJs/Display-a-popup.md
+      - Change language: MapLibreJs/Change-language.md
+      - Change style: MapLibreJs/Change-style.md
+      - Use a custom style: MapLibreJs/Use-a-custom-style.md
+      - Display a route: MapLibreJs/Use-a-custom-style.md
+      - Draw a radius: MapLibreJs/Use-a-custom-style.md
+    - MapLibre GL Android: 
+      - Quickstart: Maplibre-android/Quickstart.md
+      - Simple map: Maplibre-android/Simple-map.md
+      - Add a marker: Maplibre-android/Add-a-marker.md
+      - Add geometry: Maplibre-android/Add-Geometry.md
+      - Add your data: Maplibre-android/Add-Geometry.md
+      - Display a popup: Maplibre-android/Display-a-popup.md
+      - Change language: Maplibre-android/Change-language.md
+      - Change style: Maplibre-android/Change-style.md
+      - Use a custom style: Maplibre-android/Use-a-custom-style.md
+    - Mapbox GL iOS: 
+      - Quickstart: Mapbox-ios/Quickstart.md
+      - Simple map: Mapbox-ios/Simple-map.md
+      - Add a marker: Mapbox-ios/Add-a-marker.md
+      - Add geometry: Mapbox-ios/Add-Geometry.md
+      - Display a popup: Mapbox-ios/Display-a-popup.md
+      - Change language: Mapbox-ios/Change-language.md
+      - Change style: Mapbox-ios/Change-style.md
+      - Use a custom style: Mapbox-ios/Use-a-custom-style.md
+    - React Native: 
+      - Quickstart: ReactNative/Quickstart.md
+      - Simple map: ReactNative/Simple-map.md
+      - Add a marker: ReactNative/Add-a-marker.md
+      - Add geometry: ReactNative/Add-Geometry.md
+      - Add your data: MapLibreJs/add-your-date.md
+      - Display a popup: ReactNative/Display-a-popup.md
+      - Change language: ReactNative/Change-language.md
+      - Change style: ReactNative/Change-style.md
+      - Use a custom style: ReactNative/Use-a-custom-style.md
+
+extra_css:
+  - stylesheets/extra.css
